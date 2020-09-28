@@ -1,0 +1,127 @@
+@media(max-width: 800px ) and (min-width: 600px){
+    header ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -50%;
+        background: #fff;
+        height: 100vh;
+        width: 50%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        transition: .5s;
+    }
+
+    header ul li{
+        margin-bottom: 2em;
+        transition: .3s;
+    }
+
+    header ul li:hover{
+        padding-left: 20px;
+    }
+
+    .checkbtn{
+        display: block;
+        cursor: pointer;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .logo a{
+        font-size: 1.3em;
+    }
+    /* menu */
+
+.menu{
+    height: 200px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -15%;
+    transition: .3s;
+    z-index: 9999;
+    /* display: none; */
+}
+
+.menu-icon{
+    background: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 10px 20px;
+    width: 200px;
+    transition: .3s;
+}
+
+.menu-icon a{
+    margin-left: 3em;
+}
+
+.menu:hover{
+    left: 5%;
+}
+
+    .newest-section{
+        height: auto;
+    }
+
+    .newest-section a{
+        top: 96%;
+        left: 40%;
+    }
+
+    .newest-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .grid-2{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .card a{
+        font-size: 1.5em;
+    }
+
+    .grid-3{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 1em;
+       padding: 0px 40px;
+    }
+
+    .grid-3 img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .featured-section {
+        height: auto;
+    }
+
+    .featured-info{
+        gap: 1em;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+}

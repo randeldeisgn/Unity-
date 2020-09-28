@@ -1,0 +1,142 @@
+@media(max-width: 600px){
+    header ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -50%;
+        background: #fff;
+        height: 100vh;
+        width: 50%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        transition: .5s;
+    }
+
+    header ul li{
+        margin-bottom: 2em;
+        transition: .3s;
+    }
+
+    header ul li:hover{
+        padding-left: 20px;
+    }
+
+    .checkbtn{
+        display: block;
+        cursor: pointer;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+
+    .logo a{
+        font-size: 1.3em;
+    }
+
+    .search{
+        padding: 10px 3px;
+        position: relative;
+        top: -20%;
+    }
+
+    .banner{
+        height: 50vh;
+    }
+
+    .banner-info h1{
+        font-size: 2em;
+    }   
+
+    .icon a{
+        font-size: 20px;
+        margin-right: 1px;
+    }
+
+    .newest-section{
+        height: auto;
+    }
+
+    .newest-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5em;
+    }
+
+    .box{
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    .gallery{
+        height: auto;
+    }
+
+    .grid-2{
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+
+    .grid-3{
+        height: 400px;
+        display: block;
+        padding-left: 30px;
+    }
+
+    .grid-3 img{
+        max-width: 140px;
+        max-height: 150px;
+    }
+
+    .card{
+        width: 90%;
+        height: 200px;
+    }
+
+    .newest-section a{
+        top: 96%;
+        left: 35%;
+    }
+
+    .newest-section h1{
+        font-size: 1.5em;
+    }
+
+    .grid-3{
+        height: auto;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .featured-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5em;
+    }
+
+    .featured a{
+        top: 97%;
+        left: 35%;
+    }
+
+    .featured h1{
+        font-size: 1.5em;
+    }
+
+    .essential{
+        height: auto;
+    }
+
+    .essential-img{
+        flex-direction: column;
+        gap: 2em;
+    }
+}
